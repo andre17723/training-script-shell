@@ -5,5 +5,9 @@ do
   if [ "$answer" == "y" ]
   then
     break
-  fi
-done
+ else
+    for num in $(seq 5 -1 1)
+    do
+        echo “$num seconds until prompted again”
+        sleep 1
+    done
